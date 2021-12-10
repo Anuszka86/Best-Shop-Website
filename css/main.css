@@ -12,7 +12,7 @@
 
 }
 
-*, *::before, *::after {
+*, *::before, *::after, *:hover {
     box-sizing: border-box;
 }
 
@@ -25,7 +25,7 @@ body, html {
 .container {
     width: 1352px;
     margin: 0 auto;
-    padding: 100px 0 0 0;
+    display: flex;
 }
 
 .hidden {
@@ -35,4 +35,8 @@ body, html {
 h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
+}
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
