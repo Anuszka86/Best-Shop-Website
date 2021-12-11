@@ -127,3 +127,127 @@ div.fact-one, div.fact-two, div.fact-three{
     padding: 0 20px;
     width: 163px;
 }
+section.benefits {
+    background-color: var(--color-light-grey);
+}
+section.benefits .container {
+    padding: 100px 0;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+}
+article {
+    display: flex;
+    width: 1124px;
+    min-height: 370px;
+    justify-content: space-between;
+
+    }
+.article-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 36px;
+    gap: 50px;
+}
+.article-text h2 {
+    font-size: 36px;
+    font-weight: 400;
+}
+.article-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.article-text p::after{
+    content: "";
+    width: 332px;
+    height: 4px;
+
+    display: block;
+    margin-top: 50px;
+}
+.article-one p::after {
+    background-color: var(--color-redish);
+}
+.article-two p::after {
+    background-color: var(--color-primary);
+}
+.article-three p::after {
+    background-color: var(--color-green);
+}
+.article-one, .article-three {
+    flex-direction: row-reverse;
+}
+.article-two {
+     flex-direction: row;
+}
+
+div.article-figure {
+    position: relative;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-one .article-figure img {
+    position: relative;
+    left: -20px;
+    width: 387px;
+    height: auto;
+    z-index: 3;
+}
+.article-one .article-figure div {
+    position: absolute;
+    right: 23px;
+    top: 15px;
+    width: 180px;
+    height: 180px;
+    transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+    border-radius: 41px;
+    background-color: var(--color-redish);
+    }
+.article-two .article-figure img {
+    position: relative;
+    width: 420px;
+    height: auto;
+    z-index: 3;
+}
+.article-two .article-figure div {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+.article-three .article-figure {
+    width: 440px;
+    height: 370px;
+    background-color: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article-three .article-figure img {
+    width: 295px;
+    height: auto;
+    top: 98px;
+     }
+div.article-text
+{
+    background-color: var(--color-white);
+}
+.article-one .article-figure, .article-two .article-figure {
+    background-color: var(--color-white);
+}
+
+.article-three {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+}
