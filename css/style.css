@@ -33,13 +33,19 @@ nav a:hover {
     color: var(--color-black);
     border-bottom: 4px solid var(--color-primary);
 }
-
+section.entry {
+    max-width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 .entry .container{
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     gap: 20px;
-    padding-top: 130px;
+    padding-top: 70px;
 }
 .entry h1 {
 font-size: 49px;
@@ -55,11 +61,12 @@ font-size: 49px;
     padding: 23px 157px;
 }
 img {
-    width: 100%;
+    align-self: flex-end;
+    width: 99%;
     height: auto;
 }
 section.statistics .container {
-    padding-top: 100px;
+   padding-top: 95px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -367,4 +374,126 @@ font-size: 13px;
 }
 .box-three a{
     background-color: var(--color-green);
+}
+section.contact .container {
+    padding: 80px 250px 80px 250px;
+    display: flex;
+    justify-content: center;
+
+}
+.contact-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+}
+.contact-info h2 {
+    font-size: 49px;
+    font-weight: 400;
+    line-height: 57px;
+    }
+.contact-info p {
+    font-size: 16px;
+    font-weight: 400;
+}
+.contact-info ul {
+    display: flex;
+    align-items: flex-end;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--color-grey);
+    gap: 10px;
+
+}
+.contact-info ul li:first-child::before {
+    content: url("../assets/Mail Icon.svg");
+    margin: 0;
+    padding: 0;
+    height: 27px;
+    width: 27px;
+    align-self: baseline;
+
+
+}
+.contact-info ul li:last-child::before {
+    content: url("../assets/Phone Icon.svg");
+    margin: 0;
+    padding: 0;
+    height: 27px;
+    width: 27px;
+}
+
+div.contact-form {
+    width: 50%;
+
+}
+form {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+}
+label.name, label.email {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: 3.3px;
+    margin: 15px 0;
+}
+input[type=text], input[type=email] {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    height: 2em;
+}
+.form__consent {
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 12px;
+    color: var(--color-grey);
+}
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form__checkbox span.checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+.form__checkbox input:checked ~ span.checkbox {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+button {
+    align-self: flex-end;
+    width: 226px;
+    height: 57px;
+    background-color: var(--color-primary);
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border: none;
+    border-radius: 35px;
+    color: var(--color-white);
+    font-size: 13px;
+    font-weight: 700;
 }
