@@ -1,0 +1,32 @@
+section.entry {
+  max-width: 100%;
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.entry .container{
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+  padding-top: 70px;
+}
+.entry h1 {
+  font-size: 49px;
+}
+.entry p {
+  font-size: 16px;
+}
+.entry a.btn {
+  background-color: $color-primary;
+  border-radius: 40px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  color: $color-white;
+  padding: 23px 157px;
+}
+img {
+  align-self: flex-end;
+  width: 100%;
+  height: auto;
+}

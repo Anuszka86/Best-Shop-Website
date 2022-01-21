@@ -1,0 +1,31 @@
+footer {
+  background-color: $color-light-grey;
+  box-shadow: 0px -5px 40px #00000029;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+footer .logo {
+  display: flex;
+  flex-direction: column;
+  font-size: 26px;
+  color: $color-primary;
+  justify-content: space-evenly;
+  line-height: 30px;
+  gap: 7px;
+}
+footer .copy {
+  font-size: 11px;
+  color: $color-grey;
+  line-height: 15px;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+
+}

@@ -1,0 +1,117 @@
+section.pricing .container{
+  padding: 100px 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+section.pricing h2 {
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+}
+.boxes {
+  display: flex;
+  gap: 58px;
+  align-items: center;
+}
+.box-one, .box-two, .box-three {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 461px;
+  gap: 20px;
+  border-radius: 18px;
+  border: 1px solid;
+  padding: 30px 90px;
+  position: relative;
+}
+.box-two {
+  gap: 30px;
+  height: 500px;
+}
+.boxes p {
+  font-size: 60px;
+  text-align: center;
+  line-height: 0.4;
+  padding-top: 20px;
+}
+.boxes span {
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  color: black;
+  font-weight: 700;
+}
+.boxes h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+div.box-one {
+  border-color: $color-redish;
+}
+div.box-one p {
+  color: $color-redish;
+}
+div.box-two {
+  border-color: $color-primary;
+  box-shadow: 5px 10px 27px rgba(7, 172, 230, .16);
+}
+div.box-two p {
+  color: $color-primary;
+}
+div.box-two h3 {
+
+  font-size: 21px;
+}
+div.box-three {
+  border-color: $color-green;
+}
+div.box-three p {
+  color: $color-green;
+}
+
+.boxes ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  line-height: 41px;
+}
+
+.box-one ul li:nth-child(1)::before, .box-one ul li:nth-child(2)::before, .box-one ul li:nth-child(3)::before,
+.box-two ul li:nth-child(1)::before, .box-two ul li:nth-child(2)::before, .box-two ul li:nth-child(3)::before, .box-two ul li:nth-child(4)::before,
+.box-three ul li::before{
+  content: url("../assets/Checkmark-1.svg");
+  margin-right: 10px;
+  height: 11px;
+  width: 11px;
+}
+.box-one ul li:nth-last-child(1)::before, .box-one ul li:nth-last-child(2)::before,
+.box-two ul li:nth-last-child(1)::before{
+  content: url("../assets/Close.svg");
+  margin-right: 10px;
+  height: 11px;
+  width: 11px;
+}
+.boxes a {
+  font-size: 13px;
+  background-color: $color-primary;
+  border-radius: 23px;
+  color: $color-white;
+  padding: 16px 64px;
+  position: absolute;
+  bottom: -25px;
+}
+.box-one a{
+  background-color: $color-redish;
+}
+.box-two a{
+  background-color: $color-primary;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+}
+.box-three a{
+  background-color: $color-green;
+}
