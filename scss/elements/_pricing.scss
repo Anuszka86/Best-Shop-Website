@@ -13,6 +13,9 @@ section.pricing h2 {
   display: flex;
   gap: 58px;
   align-items: center;
+  @media (max-width: 1096px){
+    flex-direction: column;
+  }
 }
 .box-one, .box-two, .box-three {
   width: 33%;
@@ -26,10 +29,24 @@ section.pricing h2 {
   border: 1px solid;
   padding: 30px 90px;
   position: relative;
+  @media (max-width: 1096px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 85%;
+    margin: 23px;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .box-two {
   gap: 30px;
   height: 500px;
+  @media (max-width: 600px) {
+    width: 95%;
+  }
 }
 .boxes p {
   font-size: 60px;
