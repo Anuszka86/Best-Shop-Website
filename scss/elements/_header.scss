@@ -8,6 +8,7 @@ header {
 header .container {
   justify-content: space-between;
   align-items: center;
+  height: 100%;
 }
 
 .logo {
@@ -67,7 +68,8 @@ nav a:hover {
     &:last-child {
       margin-bottom: 0;
     }
-    &:focus{
+
+   &.is-x {
 
       span {
         &:nth-child(1) {

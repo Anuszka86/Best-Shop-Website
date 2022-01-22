@@ -11,8 +11,7 @@ section.benefits .container {
 
 
 }
-article
-{
+article {
   background-color: $color-white;
   border: 1px solid #E8E9ED;
   display: flex;
@@ -30,6 +29,7 @@ width: 100%;
   flex-grow: 1;
   flex-shrink: 1;
 
+
 }
 .article-one .article-figure, .article-two .article-figure {
   background-color: $color-white;
@@ -46,7 +46,6 @@ width: 100%;
   background-color: $color-white;
   @media (max-width: 990px) {
     margin: 10px 36px;
-
   }
 }
 .article-text h2 {
@@ -118,6 +117,9 @@ div.article-figure {
   margin-bottom: 38px;
   z-index: 3;
   align-self: center;
+  @media (max-width: 1093px) {
+    width: 300px;
+  }
   @media (max-width: 990px) {
     width: 200px;
     margin-right: 67px;
@@ -135,11 +137,15 @@ div.article-figure {
   border-radius: 41px;
   background-color: $color-redish;
   align-self: center;
+  @media (max-width: 1093px) {
+    width: 160px;
+    height: 160px;
+  }
   @media (max-width: 990px) {
     width: 90px;
     height: 90px;
-    right: 160px;
-    top: 95px;
+    right: 40%;
+    top: 30%;
   }
   @media (max-width: 600px) {
 
