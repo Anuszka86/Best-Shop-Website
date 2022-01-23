@@ -8,7 +8,9 @@ section.benefits .container {
   justify-content: center;
   align-items: center;
   gap: 40px;
-
+@media (max-width: 600px){
+  padding: 0 10px;
+}
 
 }
 article {
@@ -21,6 +23,7 @@ article {
   border-radius: 5px;
   @media (max-width: 990px){
 display: block;
+    height: 100%;
   }
 }
 .article-one, .article-two, .article-three {
@@ -46,6 +49,9 @@ width: 100%;
   background-color: $color-white;
   @media (max-width: 990px) {
     margin: 10px 36px;
+    width: 90%;
+    max-width: 750px;
+
   }
 }
 .article-text h2 {
@@ -63,12 +69,11 @@ width: 100%;
   margin-top: 30px;
   @media (max-width: 1050px) {
     font-size: 14px;
-
   }
 }
 .article-text p::after{
   content: "";
-  width: 332px;
+  width: 100%;
   height: 4px;
 
   display: block;
@@ -91,10 +96,16 @@ width: 100%;
 }
 
 .article-two {
+
   width: 100%;
   flex-direction: row;
   padding: 0 20px 0 70px;
   min-height: 390px;
+  @media (max-width: 1020px) {
+
+    padding: 0;
+
+  }
   @media (max-width: 990px) {
     padding: 0 0 10px 0;
   }
@@ -118,10 +129,12 @@ div.article-figure {
   z-index: 3;
   align-self: center;
   @media (max-width: 1093px) {
-    width: 300px;
+    width: 37vw;
+    min-width: 300px;
   }
   @media (max-width: 990px) {
-    width: 200px;
+    min-width: 200px;
+    width: 37vw;
     margin-right: 67px;
     margin-top: 100px;
   }
@@ -138,24 +151,25 @@ div.article-figure {
   background-color: $color-redish;
   align-self: center;
   @media (max-width: 1093px) {
-    width: 160px;
-    height: 160px;
+    min-width: 130px;
+width: 17vw;
+    min-height: 130px;
+    height: 17vw;
   }
   @media (max-width: 990px) {
-    width: 90px;
-    height: 90px;
-    right: 40%;
-    top: 30%;
+
+    min-width: 90px;
+    width: 17vw;
+    min-height: 90px;
+    height: 17vw;
+    right: 30%;
+    top: 20%;
   }
   @media (max-width: 600px) {
+    right: 30%;
+    top: 27%;
+  }
 
-    right: 80px;
-    top: 85px;
-  }
-  @media (max-width: 420px) {
-    right: 20px;
-    top: 85px;
-  }
 }
 .article-two div.article-figure
 {
@@ -164,7 +178,8 @@ div.article-figure {
   justify-content: center;
   align-items: center;
   @media (max-width: 990px) {
-    max-height: 170px;
+    max-height: 250px;
+
 
   }
 }
@@ -174,8 +189,9 @@ div.article-figure {
   height: auto;
   z-index: 3;
   @media (max-width: 990px) {
-    width: 175px;
-    left: -30px;
+    min-width: 175px;
+    width: 28vw;
+
   }
 }
 .article-two .article-figure div {
@@ -187,21 +203,21 @@ div.article-figure {
   border-radius: 50%;
   background-color: $color-primary;
   @media (max-width: 990px) {
-    width: 132px;
-    height: 132px;
-        top: 30px;
-    left: 105px;
+    min-width: 132px;
+    min-height: 132px;
+    width: 20vw;
+    height: 20vw;
+        top: 15%;
+    left: 36%;
   }
   @media (max-width: 660px) {
-    top: 30px;
-    left: 75px;
+    top: 15%;
+    left: 30%;
   }
-  @media (max-width: 500px) {
-    left: 50px;
-  }
+
   @media (max-width: 420px) {
-    top: 30px;
-    left: 25px;
+
+    left: 25%;
   }
 }
 
